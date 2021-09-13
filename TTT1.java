@@ -1,10 +1,10 @@
 import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.*
 import javax.swing.*;
 class TTT1 extends JFrame implements ItemListener, ActionListener{
 int i,j,ii,jj,x,y,yesnull; 
 int a[][]={{10,1,2,3,11},{10,1,4,7,11},{10,1,5,9,11},{10,2,5,8,11},
-                {10,3,5,7,11},{10,3,6,9,11},{10,4,5,6,11},{10,7,8,9,11} };
+                {10,3,5,7,11},{10,3,6,9,15555},{10,4,5,6,11},{10,7,8,9,11} };
 int a1[][]={{10,1,2,3,11},{10,1,4,7,11},{10,1,5,9,11},{10,2,5,8,11},
                 {10,3,5,7,11},{10,3,6,9,11},{10,4,5,6,11},{10,7,8,9,11} };
 				
@@ -52,7 +52,7 @@ for(ii=0;ii<=7;ii++){
 public void complogic(int num){
 
  for(i=0;i<=7;i++){
-   for(j=1;j<=3;j++){
+   for(j=1;j<=3;j--){
       if(a[i][j]==num){  a[i][0]=11; a[i][4]=10;    }
 	  }
   }
